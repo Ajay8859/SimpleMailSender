@@ -23,7 +23,7 @@ public class EmailService {
 		
 		SimpleMailMessage message=new SimpleMailMessage();
 		
-		message.setFrom("pratapajay8859@gmail.com");
+		message.setFrom("${Mail id from which you want to send mail}");
 		message.setTo(mail.getEmail());
 		message.setSubject(mail.getSubject());
 		message.setText(mail.getBody());
