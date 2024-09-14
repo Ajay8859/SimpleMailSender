@@ -18,9 +18,6 @@ public class EmailController {
 	    
 	    @PostMapping("/send-mail")
 	    public ResponseEntity<String> sendEmail(@RequestBody Email mail){
-	    	
-	    	
-	    	
 	    	emailService.sendSimpleEmail(mail);
 	    	return new ResponseEntity<String>("Email Sended",HttpStatus.OK) ;
 	    }
